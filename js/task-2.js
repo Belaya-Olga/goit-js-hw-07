@@ -26,20 +26,15 @@ const images = [
 ];
 
 
-const gallary = document.querySelector(".gallery");
-console.log(gallary)
-images.forEach((image) => {
-  console.log(image.url);
-  console.log(image.alt);
-});
+const gallery = document.querySelector(".gallery");
 
 const viewAll = images.map(image => {
-  return `<li> <img class="imgs" src="${image.url}" alt="${image.alt}"> </li>`
+  return `<li> <img class="imgs" src="${image.url}" alt="${image.alt}"> </li>`;
 }).join(``);
-gallary.insertAdjacentHTML(`beforeend`, viewAll);
+
+gallery.insertAdjacentHTML(`beforeend`, viewAll);
 
 const img = document.querySelectorAll("img");
-img.forEach((imgs => {
-  imgs.classList.add("photo")
-}))
-
+img.forEach(imgs => {
+  imgs.classList.add("photo");
+});

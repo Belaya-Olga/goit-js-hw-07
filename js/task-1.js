@@ -7,5 +7,5 @@ items.forEach((item) => {
     console.log(`Elements:`, subHeader.length);
 })
 
-addClass = document.querySelector("#categories");
-addClass.classList.add("background");
+// addClass = document.querySelector("#categories");
+// addClass.classList.add("background");
